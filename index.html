@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Thoresen Labs – webutvikling, Linux, automatisering og tekniske løsninger." />
+  <title>Thoresen Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Thoresen Labs hjem">
+      <span class="brand-mark">TL</span>
+      <span>THORESEN LABS</span>
+    </a>
+    <nav aria-label="Hovedmeny">
+      <a href="#services">Tjenester</a>
+      <a href="#projects">Prosjekter</a>
+      <a href="#about">Om</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="eyebrow">Software · Web · Linux · Automation</div>
+      <h1>Tekniske løsninger som faktisk virker.</h1>
+      <p class="lead">Thoresen Labs bygger raske nettsider, små og mellomstore programvareløsninger, automatiseringer og Linux-baserte verktøy.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#contact">Ta kontakt</a>
+        <a class="button secondary" href="#projects">Se prosjekter</a>
+      </div>
+      <div class="terminal-card" aria-label="Eksempel på teknologifokus">
+        <div class="terminal-top"><span></span><span></span><span></span></div>
+        <pre><code>$ whoami
+thoresenlabs
+
+$ focus
+web • linux • automation • open-source
+
+$ status
+ready_to_build = true</code></pre>
+      </div>
+    </section>
+
+    <section id="services" class="section wrap">
+      <div class="section-kicker">Tjenester</div>
+      <h2>Fra idé til løsning.</h2>
+      <div class="grid cards-4">
+        <article class="card">
+          <div class="icon">&lt;/&gt;</div>
+          <h3>Webutvikling</h3>
+          <p>Raske, moderne og responsive nettsider og nettbutikkløsninger med fokus på ytelse og enkel drift.</p>
+        </article>
+        <article class="card">
+          <div class="icon">↻</div>
+          <h3>Automatisering</h3>
+          <p>Små verktøy og arbeidsflyter som reduserer manuelt arbeid og gjør hverdagen enklere.</p>
+        </article>
+        <article class="card">
+          <div class="icon">$_</div>
+          <h3>Linux</h3>
+          <p>Oppsett, feilsøking, scripting og utvikling av løsninger for Linux-baserte systemer.</p>
+        </article>
+        <article class="card">
+          <div class="icon">◇</div>
+          <h3>Teknisk rådgivning</h3>
+          <p>Praktisk hjelp med valg, oppsett og forbedring av digitale løsninger og teknisk infrastruktur.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section wrap">
+      <div class="section-kicker">Prosjekter</div>
+      <h2>Ting som er bygget.</h2>
+      <div class="grid cards-2">
+        <article class="project-card">
+          <div>
+            <span class="tag">Open Source</span>
+            <h3>Fedora CPU Limit</h3>
+            <p>Et enkelt verktøy for å begrense maksimal CPU-frekvens i Fedora uten å måtte bytte strømprofil.</p>
+          </div>
+          <div class="project-meta">Linux · Python · Fedora</div>
+        </article>
+        <article class="project-card">
+          <div>
+            <span class="tag">Web</span>
+            <h3>FYFAEN.STORE</h3>
+            <p>Utvikling, teknisk oppsett og løpende forbedringer for nettbutikk og digital tilstedeværelse.</p>
+          </div>
+          <div class="project-meta">E-commerce · Web · Support</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap about-grid">
+      <div>
+        <div class="section-kicker">Om</div>
+        <h2>Lite firma. Kort vei fra problem til løsning.</h2>
+      </div>
+      <div class="about-copy">
+        <p>Thoresen Labs er et norsk enkeltpersonforetak med fokus på web, software, Linux og automatisering. Målet er å lage løsninger som er enkle å bruke, enkle å vedlikeholde og som løser et faktisk behov.</p>
+        <p>Oppdrag kan være alt fra en mindre nettside eller teknisk feilretting til utvikling av egne verktøy, integrasjoner og automatiserte arbeidsflyter.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section wrap">
+      <div class="contact-card">
+        <div>
+          <div class="section-kicker">Kontakt</div>
+          <h2>Har du noe som bør bygges eller fikses?</h2>
+          <p>Ta kontakt for en uforpliktende prat om oppdrag, samarbeid eller tekniske løsninger.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:post@thoresenlabs.no">Ta kontakt</a>
+          <a class="button secondary" href="https://github.com/kaitho" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <span>© <span id="year"></span> Thoresen Labs</span>
+    <span>thoresenlabs.no - Orgnr 938322414</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
