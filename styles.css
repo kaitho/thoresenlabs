@@ -266,18 +266,89 @@ code {
 
 .contact-card {
   padding: 38px;
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  align-items: end;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+  gap: 64px;
+  align-items: start;
 }
 .contact-card h2 {
   margin-bottom: 14px;
 }
-.contact-actions {
+.contact-intro > p {
+  max-width: 520px;
+}
+.contact-links {
   display: flex;
-  gap: 10px;
+  gap: 18px;
   flex-wrap: wrap;
+  margin-top: 28px;
+}
+.contact-links a {
+  color: var(--muted);
+  font-size: 0.92rem;
+  border-bottom: 1px solid var(--line);
+}
+.contact-links a:hover {
+  color: var(--text);
+  border-color: var(--muted);
+}
+.contact-form {
+  display: grid;
+  gap: 18px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.contact-form label {
+  display: grid;
+  gap: 8px;
+}
+.contact-form label > span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #0a0f17;
+  color: var(--text);
+  font: inherit;
+  padding: 12px 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.contact-form textarea {
+  min-height: 132px;
+  resize: vertical;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent-2);
+  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.12);
+}
+.contact-form button {
+  cursor: pointer;
+  font: inherit;
+}
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+}
+.form-status {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.88rem;
+}
+.form-trap {
+  position: absolute;
+  left: -9999px;
 }
 
 .site-footer {
@@ -298,8 +369,8 @@ code {
     gap: 20px;
   }
   .contact-card {
-    align-items: start;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 36px;
   }
 }
 @media (max-width: 680px) {
@@ -318,6 +389,16 @@ code {
   }
   .contact-card {
     padding: 26px;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .form-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .form-footer .button {
+    width: 100%;
   }
   .site-footer {
     flex-direction: column;
