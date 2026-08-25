@@ -109,15 +109,43 @@ ready_to_build = true</code></pre>
 
     <section id="contact" class="section wrap">
       <div class="contact-card">
-        <div>
+        <div class="contact-intro">
           <div class="section-kicker">Kontakt</div>
           <h2>Har du noe som bør bygges eller fikses?</h2>
-          <p>Ta kontakt for en uforpliktende prat om oppdrag, samarbeid eller tekniske løsninger.</p>
+          <p>Fortell kort hva du trenger hjelp med, så tar jeg kontakt for en uforpliktende prat.</p>
+          <div class="contact-links">
+            <a href="mailto:post@thoresenlabs.no">post@thoresenlabs.no</a>
+            <a href="https://github.com/kaitho" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
         </div>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:post@thoresenlabs.no">Ta kontakt</a>
-          <a class="button secondary" href="https://github.com/kaitho" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
+
+        <form class="contact-form" action="https://formsubmit.co/post@thoresenlabs.no" method="POST">
+          <input type="hidden" name="_subject" value="Ny henvendelse fra thoresenlabs.no">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://thoresenlabs.no/?sent=1#contact">
+          <input class="form-trap" type="text" name="_honey" tabindex="-1" autocomplete="off">
+
+          <div class="form-row">
+            <label>
+              <span>Navn</span>
+              <input type="text" name="navn" autocomplete="name" required>
+            </label>
+            <label>
+              <span>E-post</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+          </div>
+
+          <label>
+            <span>Hva kan jeg hjelpe med?</span>
+            <textarea name="melding" rows="5" required></textarea>
+          </label>
+
+          <div class="form-footer">
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            <button class="button primary" type="submit">Send melding</button>
+          </div>
+        </form>
       </div>
     </section>
   </main>
